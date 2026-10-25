@@ -1,0 +1,21 @@
+{
+  "title": "Asian soybean rust control trials in Brazil: 5,836 results from 20 Embrapa publications",
+  "upload_type": "dataset",
+  "description": "5,836 trial results on the control of Asian soybean rust (Phakopsora pachyrhizi) in Brazil, transcribed from the tables of 20 open-access Embrapa publications (2008-2023), including five national summaries of Embrapa Soja's cooperative fungicide trials: treatment, dose and timing, place, season, measured variable (severity, yield, control efficacy, AUDPC and others) and value, with the page and table of origin. Each document was transcribed twice, independently, by AI agents, and every disagreement was settled against the PDF; a human reviewed the result before publication. Part of the Paper Rerun project (Open Tables).",
+  "creators": [
+    {
+      "name": "Tessaro, Filipe"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "Phakopsora pachyrhizi",
+    "Asian soybean rust",
+    "soybean",
+    "fungicide efficacy",
+    "Brazil",
+    "Embrapa",
+    "open data",
+    "AI agents"
+  ]
+}
