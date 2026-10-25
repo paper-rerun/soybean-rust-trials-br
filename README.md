@@ -1,5 +1,7 @@
 # Asian soybean rust control trials in Brazil
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23631775.svg)](https://doi.org/10.5281/zenodo.23631775)
+
 5,836 trial results on the control of Asian soybean rust (*Phakopsora pachyrhizi*, "ferrugem-asiática da soja") in Brazil, taken from the tables of 20 open-access Embrapa publications (2008 to 2023). Each row is one number exactly as printed: a treatment, its dose and timing, where and when it was tested, what was measured and the value, with the page and table it came from.
 
 Asian soybean rust is the most damaging soybean disease in Brazil, and fungicides lose efficacy over time as the fungus adapts. Embrapa's national network of cooperative trials has measured that every season for almost two decades, but the results sit in yearly technical circulars as PDF tables. This dataset makes 20 of those publications searchable and comparable across seasons.
