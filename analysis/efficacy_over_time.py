@@ -1,12 +1,15 @@
 """Control efficacy of each fungicide across the national cooperative trials, season by season.
 
-The five national summaries in this dataset (2009/10, 2012/13, 2015/16, 2019/20, 2022/23) each
-print one table with the mean control efficacy of every product over all trial sites. This script
-takes those tables, matches the same active ingredients at the same dose across seasons, and
-writes the series and a per-product trend.
+Each national summary prints one table with the mean control efficacy of every product over all
+trial sites. series.csv lists every season, which publication holds it, and, once the publication
+is in the dataset, its doc_id and the label of that table. This script takes those tables, matches
+the same active ingredients at the same dose across seasons, and fits for each product a straight
+line over the seasons it was tested.
 
-Exploratory: efficacy also depends on how strong the epidemic was in each season, so a fall in one
-product means more when the products tested alongside it fell less.
+Efficacy also depends on how strong the epidemic was in a season. The model separates the two:
+efficacy = product level + product trend x (year - product's mean year) + season effect, with the
+season effects averaging zero. It is fitted by alternating least squares, so a season in which
+every product did worse does not show up as a fall in each product.
 
 Usage: python -I efficacy_over_time.py
 Writes efficacy_by_season.csv and efficacy_trends.csv next to this file. Needs pandas.
@@ -19,15 +22,9 @@ import pandas as pd
 
 HERE = Path(__file__).parent
 DATA = HERE.parent / "data" / "soybean_rust_trials.csv"
-
-# The national mean table of each summary
-MEAN_TABLES = {
-	"godoy2010-cooperativos-0910-ct80": "Tabela 3",
-	"godoy2013-cooperativos-1213-ct99": "Tabela 3",
-	"godoy2016-cooperativos-1516-ct119": "Tabela 3",
-	"godoy2020-cooperativos-1920-ct160": "Tabela 5",
-	"godoy2023-cooperativos-2223-ct195": "Tabela 6",
-}
+SERIES = HERE / "series.csv"
+MIN_SEASONS = 3
+ITERATIONS = 200
 
 
 def ingredients(text):
@@ -44,58 +41,76 @@ def dose(text):
 	return " + ".join(p.strip().replace(".", "").replace(",", ".") for p in match.group(1).split("+"))
 
 
-def season_start(season):
-	return int(str(season)[:4])
-
-
-def main():
+def load_series():
 	data = pd.read_csv(DATA, dtype=str)
+	seasons = pd.read_csv(SERIES, dtype=str).fillna("")
 	rows = []
-	for doc, table in MEAN_TABLES.items():
+	for _, s in seasons[(seasons.doc_id != "") & (seasons.mean_table != "")].iterrows():
 		part = data[
-			(data.doc_id == doc)
-			& (data.table_or_figure == table)
+			(data.doc_id == s.doc_id)
+			& (data.table_or_figure == s.mean_table)
 			& (data.variable_standardized == "control_efficacy_pct")
 			& data.active_ingredient_or_agent.notna()
 		]
 		for _, r in part.iterrows():
 			rows.append({
-				"season": r.season_or_year,
-				"year": season_start(r.season_or_year),
-				"ingredients": ingredients(r.active_ingredient_or_agent),
-				"dose_g_ai_ha": dose(r.dose_and_unit),
+				"season": s.season,
+				"year": int(s.season[:4]),
+				"product": f"{ingredients(r.active_ingredient_or_agent)} ({dose(r.dose_and_unit) or 'dose not printed'} g a.i./ha)",
 				"efficacy_pct": float(r.value),
 				"treatment_as_printed": r.treatment,
 				"record_id": r.record_id,
 			})
-	series = pd.DataFrame(rows).sort_values(["ingredients", "dose_g_ai_ha", "year"])
-	series.to_csv(HERE / "efficacy_by_season.csv", index=False)
+	series = pd.DataFrame(rows)
+	# A product printed twice in one table (two formulations) counts once, as their mean
+	return series.groupby(["product", "season", "year"], as_index=False).agg(
+		efficacy_pct=("efficacy_pct", "mean"), record_ids=("record_id", "; ".join))
 
-	season_mean = series.groupby("year").efficacy_pct.mean()
+
+def slope(x, y):
+	x = x - x.mean()
+	return (x * (y - y.mean())).sum() / (x ** 2).sum() if (x ** 2).sum() else 0.0
+
+
+def fit(series):
+	"""Per-product line plus a season effect, by alternating least squares."""
+	tracked = series.groupby("product").filter(lambda g: len(g) >= MIN_SEASONS).copy()
+	season_effect = pd.Series(0.0, index=sorted(tracked.year.unique()))
+	for _ in range(ITERATIONS):
+		tracked["adjusted"] = tracked.efficacy_pct - tracked.year.map(season_effect)
+		lines = {p: (g.adjusted.mean(), slope(g.year, g.adjusted), g.year.mean()) for p, g in tracked.groupby("product")}
+		tracked["line"] = [lines[p][0] + lines[p][1] * (y - lines[p][2]) for p, y in zip(tracked["product"], tracked.year)]
+		new_effect = (tracked.efficacy_pct - tracked.line).groupby(tracked.year).mean()
+		new_effect -= new_effect.mean()
+		if (new_effect - season_effect).abs().max() < 1e-9:
+			break
+		season_effect = new_effect
+	return tracked, lines, season_effect
+
+
+def main():
+	series = load_series()
+	series.sort_values(["product", "year"]).to_csv(HERE / "efficacy_by_season.csv", index=False)
+	tracked, lines, season_effect = fit(series)
+
 	trends = []
-	for (name, dose_g), g in series.groupby(["ingredients", "dose_g_ai_ha"]):
-		g = g.groupby("year").efficacy_pct.mean()
-		if len(g) < 3:
-			continue
-		years = pd.Series(g.index, index=g.index, dtype=float)
-		slope = ((years - years.mean()) * (g - g.mean())).sum() / ((years - years.mean()) ** 2).sum()
-		relative = g - season_mean.loc[g.index]
-		rel_slope = ((years - years.mean()) * (relative - relative.mean())).sum() / ((years - years.mean()) ** 2).sum()
+	for product, g in tracked.groupby("product"):
+		g = g.sort_values("year")
 		trends.append({
-			"ingredients": name,
-			"dose_g_ai_ha": dose_g,
+			"product": product,
 			"seasons": len(g),
-			"first": f"{int(g.index[0])}: {g.iloc[0]:.0f}%",
-			"last": f"{int(g.index[-1])}: {g.iloc[-1]:.0f}%",
-			"change_pp_per_year": round(slope, 2),
-			"change_vs_season_mean_pp_per_year": round(rel_slope, 2),
+			"first": f"{g.season.iloc[0]}: {g.efficacy_pct.iloc[0]:.0f}%",
+			"last": f"{g.season.iloc[-1]}: {g.efficacy_pct.iloc[-1]:.0f}%",
+			"raw_change_pp_per_year": round(slope(g.year, g.efficacy_pct), 2),
+			"season_adjusted_change_pp_per_year": round(lines[product][1], 2),
 		})
-	trends = pd.DataFrame(trends).sort_values("change_pp_per_year")
+	trends = pd.DataFrame(trends).sort_values("season_adjusted_change_pp_per_year")
 	trends.to_csv(HERE / "efficacy_trends.csv", index=False)
+
+	print(f"{series.season.nunique()} seasons, {series['product'].nunique()} products, {len(trends)} tested in {MIN_SEASONS}+ seasons\n")
 	print(trends.to_string(index=False))
-	print()
-	print("Mean efficacy of all products in each season:")
-	print(season_mean.round(1).to_string())
+	print("\nSeason effect (pp, all products together; negative = harder season):")
+	print(season_effect.round(1).to_string())
 
 
 if __name__ == "__main__":

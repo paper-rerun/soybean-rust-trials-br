@@ -1,0 +1,24 @@
+season,status,doc_id,mean_table,publication,record_or_pdf,note
+2003/04,to_transcribe,,,Embrapa Soja Documentos 251 (2005),https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/467275/1/Resultadosdarededeensaiosparacontrolequimicodedoencasnaculturadasoja.Safra20032004.pdf,network results for several soybean diseases; take the rust section
+2004/05,to_transcribe,,,Embrapa Soja Documentos 266,https://www.infoteca.cnptia.embrapa.br/bitstream/doc/469065/1/documento266.pdf,joint analysis of 20 rust trials
+2005/06,to_find,,,,,15 trials per the Embrapa rust page; publication not yet identified
+2006/07,to_find,,,,,10 trials per the Embrapa rust page; publication not yet identified
+2007/08,to_find,,,,,7 trials per the Embrapa rust page; publication not yet identified
+2008/09,to_transcribe,,,Embrapa Soja Documentos 315 (2009),https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/573860/1/doc315online.pdf,"Reunião do Consórcio Antiferrugem, section with the summarized cooperative results; Documentos 317 has the per-site trials"
+2009/10,in_dataset,godoy2010-cooperativos-0910-ct80,Tabela 3,Circular Técnica 80,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/863237,
+2010/11,to_transcribe,,,Circular Técnica 87 (2011),,record link to confirm
+2011/12,to_transcribe,,,Circular Técnica 93,,record link to confirm
+2012/13,in_dataset,godoy2013-cooperativos-1213-ct99,Tabela 3,Circular Técnica 99,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/966125,
+2013/14,to_transcribe,,,Circular Técnica 103 (2014),https://www.researchgate.net/publication/265301101,record link on Infoteca to confirm
+2014/15,to_transcribe,,,Circular Técnica 111 (2015),,a separate circular covers multisite fungicides and fertilizers in the same season
+2015/16,in_dataset,godoy2016-cooperativos-1516-ct119,Tabela 3,Circular Técnica 119,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1050910,
+2016/17,to_find,,,,,publication not yet identified
+2017/18,to_transcribe,,,Circular Técnica (number to confirm),https://www.researchgate.net/publication/329210346,34 trials considered for the summary
+2018/19,to_transcribe,,,Circular Técnica 148,https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1110595/1/CT148OL.pdf,
+2019/20,in_dataset,godoy2020-cooperativos-1920-ct160,Tabela 5,Circular Técnica 160,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1124331,
+2020/21,to_transcribe,,,Circular Técnica (number to confirm),,a separate circular covers multisite fungicides and a biological product (2020/21)
+2021/22,to_transcribe,,,Circular Técnica 187,https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1145904/1/Circ-Tec-187.pdf,
+2022/23,in_dataset,godoy2023-cooperativos-2223-ct195,Tabela 6,Circular Técnica 195,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1154837,
+2023/24,to_transcribe,,,Circular Técnica 206 (2024),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1165843,
+2024/25,to_transcribe,,,Circular Técnica 219 (2025),https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1177349/1/Circ-Tec-219.pdf,
+2025/26,to_transcribe,,,Circular Técnica (number to confirm),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1188231,

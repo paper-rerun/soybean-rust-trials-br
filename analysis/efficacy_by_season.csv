@@ -1,75 +1,73 @@
-season,year,ingredients,dose_g_ai_ha,efficacy_pct,treatment_as_printed,record_id
-2012/13,2012,azoxistrobina,50,47.0,azoxistrobina1,godoy2013-cooperativos-1213-ct99#0013
-2015/16,2015,azoxistrobina,50,24.0,azoxistrobina1,godoy2016-cooperativos-1516-ct119#0013
-2015/16,2015,azoxistrobina + benzovindiflupir,60 + 30,76.0,azoxistrobina+benzovindiflupir2,godoy2016-cooperativos-1516-ct119#0041
-2019/2020,2019,azoxistrobina + benzovindiflupir,60 + 30,50.0,Elatus7 (azoxistrobina + benzovindiflupir),godoy2020-cooperativos-1920-ct160#0033
-2022/2023,2022,azoxistrobina + benzovindiflupir,60 + 30,28.0,Elatus5 (azoxistrobina + benzovindiflupir),godoy2023-cooperativos-2223-ct195#0029
-2009/10,2009,azoxistrobina + ciproconazol,60 + 24,79.0,azoxistrobina+ciproconazol1,godoy2010-cooperativos-0910-ct80#0013
-2012/13,2012,azoxistrobina + ciproconazol,60 + 24,64.0,azoxistrobina + ciproconazol2,godoy2013-cooperativos-1213-ct99#0017
-2015/16,2015,azoxistrobina + ciproconazol,60 + 24,40.0,azoxistrobina+ciproconazol1,godoy2016-cooperativos-1516-ct119#0017
-2015/16,2015,azoxistrobina + ciproconazol,60 + 24,44.0,"azoxistrobina+ciproconazol 1,8",godoy2016-cooperativos-1516-ct119#0045
-2012/13,2012,azoxistrobina + flutriafol,62.5 + 62.5,57.0,"azoxistrobina + flutriafol1,8",godoy2013-cooperativos-1213-ct99#0037
-2012/13,2012,azoxistrobina + flutriafol,62.5 + 62.5,53.0,"azoxistrobina + flutriafol7,9",godoy2013-cooperativos-1213-ct99#0053
-2022/2023,2022,azoxistrobina + mancozebe + protioconazol,75 + 75 + 1050,63.0,Evolution8 (azoxistrobina + protioconazol + mancozebe),godoy2023-cooperativos-2223-ct195#0053
-2015/16,2015,azoxistrobina + mancozebe + tebuconazol,82.25 + 98 + 1044.75,55.0,"azoxistrobina+tebuconazol+mancozebe7,8",godoy2016-cooperativos-1516-ct119#0053
-2015/16,2015,azoxistrobina + mancozebe + tebuconazol,94 + 112 + 1194,59.0,"azoxistrobina+tebuconazol+mancozebe7,8",godoy2016-cooperativos-1516-ct119#0057
-2012/13,2012,azoxistrobina + solatenol,60 + 30,84.0,"azoxistrobina + solatenol2,9",godoy2013-cooperativos-1213-ct99#0069
-2012/13,2012,azoxistrobina + tebuconazol,60 + 100,61.0,azoxistrobina + tebuconazol1,godoy2013-cooperativos-1213-ct99#0045
-2012/13,2012,azoxistrobina + tebuconazol,62.5 + 125,56.0,"azoxistrobina + tebuconazol6,9",godoy2013-cooperativos-1213-ct99#0049
-2012/13,2012,azoxistrobina + tebuconazol,72 + 96,57.0,"azoxistrobina + tebuconazol1,9",godoy2013-cooperativos-1213-ct99#0041
-2009/10,2009,azoxistrobina + tetraconazol,50 + 50,75.0,azoxistrobina+tetraconazol5,godoy2010-cooperativos-0910-ct80#0033
-2015/16,2015,benzovindiflupir + picoxistrobina,60 + 30,78.0,picoxistrobina+benzovindiflupir 9,godoy2016-cooperativos-1516-ct119#0069
-2019/2020,2019,benzovindiflupir + picoxistrobina,60 + 30,61.0,Vessarya (picoxistrobina + benzovindiflupir),godoy2020-cooperativos-1920-ct160#0037
-2022/2023,2022,benzovindiflupir + protioconazol,67.5 + 33.75,52.0,Mitrion (protioconazol + benzovindiflupir),godoy2023-cooperativos-2223-ct195#0025
-2019/2020,2019,bixafen + ciproconazol + clorotalonil + epoxiconazol + fluxapiroxade / metominostrobina + mancozebe / picoxistrobina + protioconazol + tebuconazol + trifloxistrobina / piraclostrobina,,75.0,Programa 2,godoy2020-cooperativos-1920-ct160#0056
-2015/16,2015,bixafen + protioconazol + trifloxistrobina,62.5 + 87.5 + 75,71.0,"bixafen+ protioconazol+trifloxistrobina3,9",godoy2016-cooperativos-1516-ct119#0065
-2019/2020,2019,bixafen + protioconazol + trifloxistrobina,62.5 + 87.5 + 75,76.0,Fox Xpro2 (bixafen + protioconazol + trifloxistrobina),godoy2020-cooperativos-1920-ct160#0049
-2022/2023,2022,bixafen + protioconazol + trifloxistrobina,62.5 + 87.5 + 75,57.0,Fox Xpro3 (bixafen + protioconazol + trifloxistrobina),godoy2023-cooperativos-2223-ct195#0033
-2009/10,2009,ciproconazol,30,39.0,ciproconazol,godoy2010-cooperativos-0910-ct80#0009
-2012/13,2012,ciproconazol,30,46.0,ciproconazol,godoy2013-cooperativos-1213-ct99#0009
-2015/16,2015,ciproconazol,30,26.0,ciproconazol,godoy2016-cooperativos-1516-ct119#0009
-2019/2020,2019,ciproconazol + clorotalonil + fluxapiroxade / bixafen + oxicloreto de cobre + picoxistrobina + protioconazol + tebuconazol / trifloxistrobina + trifloxistrobina / mancozebe,,79.0,Programa 1,godoy2020-cooperativos-1920-ct160#0053
-2022/2023,2022,ciproconazol + picoxistrobina,54 + 24,41.0,Aproach Power (picoxistrobina + ciproconazol),godoy2023-cooperativos-2223-ct195#0005
-2009/10,2009,ciproconazol + picoxistrobina,60 + 24,81.0,picoxistrobina+ciproconazol4,godoy2010-cooperativos-0910-ct80#0025
-2012/13,2012,ciproconazol + picoxistrobina,60 + 24,68.0,picoxistrobina + ciproconazol4,godoy2013-cooperativos-1213-ct99#0025
-2015/16,2015,ciproconazol + picoxistrobina,60 + 24,51.0,picoxistrobina+ciproconazol2,godoy2016-cooperativos-1516-ct119#0021
-2019/2020,2019,ciproconazol + picoxistrobina,60 + 24,50.0,Aproach Prima1 (picoxistrobina + ciproconazol),godoy2020-cooperativos-1920-ct160#0005
-2009/10,2009,ciproconazol + trifloxistrobina,56.25 + 24,74.0,trifloxistrobina+ciproconazol3,godoy2010-cooperativos-0910-ct80#0029
-2015/16,2015,ciproconazol + trifloxistrobina,75 + 32,50.0,trifloxistrobina+ciproconazol3,godoy2016-cooperativos-1516-ct119#0025
-2019/2020,2019,ciproconazol + trifloxistrobina,75 + 32,48.0,Sphere Max2 (trifloxistrobina + ciproconazol),godoy2020-cooperativos-1920-ct160#0009
-2022/2023,2022,clorotalonil + impirfluxam + metominostrobina,34.2 + 68.6 + 1142.8,67.0,Sugoy1 (impirfluxam + metominostrobina + clorotalonil),godoy2023-cooperativos-2223-ct195#0045
-2019/2020,2019,clorotalonil + tebuconazol,125 + 1125,70.0,Fezan Gold4 (tebuconazol + clorotalonil),godoy2020-cooperativos-1920-ct160#0021
-2022/2023,2022,clorotalonil + tebuconazol,125 + 1125,60.0,Fezan Gold6 (tebuconazol + clorotalonil),godoy2023-cooperativos-2223-ct195#0041
-2012/13,2012,epoxiconazol + fluxapiroxad + piraclostrobina,64.8 + 40 + 40,76.0,"piraclostrobina + epoxiconazol + fluxapiroxad3,9",godoy2013-cooperativos-1213-ct99#0061
-2015/16,2015,epoxiconazol + fluxapiroxade + piraclostrobina,64.8 + 40 + 40,69.0,piraclostrobina+epoxiconazol+fluxapiroxade5,godoy2016-cooperativos-1516-ct119#0061
-2019/2020,2019,epoxiconazol + fluxapiroxade + piraclostrobina,65 + 40 + 40,64.0,Ativum8 (piraclostrobina + epoxiconazol + fluxapiroxade),godoy2020-cooperativos-1920-ct160#0045
-2022/2023,2022,epoxiconazol + fluxapiroxade + piraclostrobina,65 + 40 + 40,44.0,Ativum2 (piraclostrobina + epoxiconazol + fluxapiroxade),godoy2023-cooperativos-2223-ct195#0037
-2009/10,2009,epoxiconazol + piraclostrobina,51 + 37.5,75.0,piraclostrobina+epoxiconazol8,godoy2010-cooperativos-0910-ct80#0049
-2009/10,2009,epoxiconazol + piraclostrobina,65 + 40,77.0,piraclostrobina+epoxiconazol7,godoy2010-cooperativos-0910-ct80#0045
-2009/10,2009,epoxiconazol + piraclostrobina,66.5 + 25,79.0,piraclostrobina+epoxiconazol2,godoy2010-cooperativos-0910-ct80#0017
-2012/13,2012,epoxiconazol + piraclostrobina,66.5 + 25,61.0,piraclostrobina + epoxiconazol3,godoy2013-cooperativos-1213-ct99#0021
-2012/13,2012,fluxapiroxad + piraclostrobina,99.9 + 50.1,71.0,"piraclostrobina + fluxapiroxad3,9",godoy2013-cooperativos-1213-ct99#0065
-2022/2023,2022,fluxapiroxade + mancozebe + protioconazol,63 + 45 + 880,69.0,Almada7 (protioconazol + fluxapiroxade + mancozebe),godoy2023-cooperativos-2223-ct195#0057
-2019/2020,2019,fluxapiroxade + oxicloreto de cobre,60 + 504,70.0,Audaz/Aumenax5 (oxicloreto de cobre + fluxapiroxade),godoy2020-cooperativos-1920-ct160#0025
-2015/16,2015,fluxapiroxade + piraclostrobina,116.55 + 58.45,56.0,piraclostrobina+fluxapiroxade5,godoy2016-cooperativos-1516-ct119#0037
-2019/2020,2019,fluxapiroxade + piraclostrobina,116.55 + 58.45,54.0,Orkestra SC8 (piraclostrobina + fluxapiroxade),godoy2020-cooperativos-1920-ct160#0041
-2022/2023,2022,fluxapiroxade + protioconazol,84 + 60,56.0,Blavity2 (protioconazol + fluxapiroxade),godoy2023-cooperativos-2223-ct195#0013
-2022/2023,2022,impirfluxam + protioconazol,84 + 42,60.0,Fox Supra3 (protioconazol + impirfluxam),godoy2023-cooperativos-2223-ct195#0017
-2022/2023,2022,impirfluxam + tebuconazol,140 + 42,63.0,Excalia Max4 (tebuconazol + impirfluxam),godoy2023-cooperativos-2223-ct195#0021
-2019/2020,2019,mancozebe + picoxistrobina + tebuconazol,1000 + 66.5 + 83.33,76.0,Cronnos6 (mancozebe + picoxistrobina + tebuconazol),godoy2020-cooperativos-1920-ct160#0029
-2015/16,2015,mancozebe + picoxistrobina + tebuconazol,80 + 80 + 1200,64.0,"picoxistrobina+tebuconazol+mancozebe6,8",godoy2016-cooperativos-1516-ct119#0049
-2022/2023,2022,mancozebe + protioconazol,90 + 1125,61.0,Armero7 (protioconazol + mancozebe),godoy2023-cooperativos-2223-ct195#0049
-2009/10,2009,metconazol + piraclostrobina,65 + 40,78.0,piraclostrobina+metconazol,godoy2010-cooperativos-0910-ct80#0041
-2012/13,2012,metominostrobina + tebuconazol,63.8 + 95.7,61.0,"metominostrobina + tebuconazol8,9",godoy2013-cooperativos-1213-ct99#0057
-2019/2020,2019,metominostrobina + tebuconazol,79.75 + 119.63,62.0,Fusão3 (metominostrobina + tebuconazol),godoy2020-cooperativos-1920-ct160#0017
-2022/2023,2022,metominostrobina + tebuconazol,79.75 + 119.63,62.0,Fusão1 (metominostrobina + tebuconazol),godoy2023-cooperativos-2223-ct195#0009
-2012/13,2012,picoxistrobina + tebuconazol,60 + 100,73.0,picoxistrobina + tebuconazol1,godoy2013-cooperativos-1213-ct99#0033
-2015/16,2015,picoxistrobina + tebuconazol,60 + 100,56.0,picoxistrobina+tebuconazol4,godoy2016-cooperativos-1516-ct119#0033
-2009/10,2009,protioconazol + trifloxistrobina,45 + 52.5,81.0,trifloxistrobina+protioconazol6,godoy2010-cooperativos-0910-ct80#0037
-2012/13,2012,protioconazol + trifloxistrobina,60 + 70,76.0,trifloxistrobina + protioconazol5,godoy2013-cooperativos-1213-ct99#0029
-2015/16,2015,protioconazol + trifloxistrobina,60 + 70,68.0,trifloxistrobina+protioconazol3,godoy2016-cooperativos-1516-ct119#0029
-2019/2020,2019,protioconazol + trifloxistrobina,60 + 70,69.0,Fox2 (trifloxistrobina + protioconazol),godoy2020-cooperativos-1920-ct160#0013
-2009/10,2009,tebuconazol,100,28.0,tebuconazol,godoy2010-cooperativos-0910-ct80#0005
-2012/13,2012,tebuconazol,100,41.0,tebuconazol,godoy2013-cooperativos-1213-ct99#0005
-2015/16,2015,tebuconazol,100,19.0,tebuconazol,godoy2016-cooperativos-1516-ct119#0005
-2009/10,2009,tebuconazol + trifloxistrobina,50 + 100,71.0,trifloxistrobina+tebuconazol3,godoy2010-cooperativos-0910-ct80#0021
+product,season,year,efficacy_pct,record_ids
+azoxistrobina (50 g a.i./ha),2012/13,2012,47.0,godoy2013-cooperativos-1213-ct99#0013
+azoxistrobina (50 g a.i./ha),2015/16,2015,24.0,godoy2016-cooperativos-1516-ct119#0013
+azoxistrobina + benzovindiflupir (60 + 30 g a.i./ha),2015/16,2015,76.0,godoy2016-cooperativos-1516-ct119#0041
+azoxistrobina + benzovindiflupir (60 + 30 g a.i./ha),2019/20,2019,50.0,godoy2020-cooperativos-1920-ct160#0033
+azoxistrobina + benzovindiflupir (60 + 30 g a.i./ha),2022/23,2022,28.0,godoy2023-cooperativos-2223-ct195#0029
+azoxistrobina + ciproconazol (60 + 24 g a.i./ha),2009/10,2009,79.0,godoy2010-cooperativos-0910-ct80#0013
+azoxistrobina + ciproconazol (60 + 24 g a.i./ha),2012/13,2012,64.0,godoy2013-cooperativos-1213-ct99#0017
+azoxistrobina + ciproconazol (60 + 24 g a.i./ha),2015/16,2015,42.0,godoy2016-cooperativos-1516-ct119#0017; godoy2016-cooperativos-1516-ct119#0045
+azoxistrobina + flutriafol (62.5 + 62.5 g a.i./ha),2012/13,2012,55.0,godoy2013-cooperativos-1213-ct99#0037; godoy2013-cooperativos-1213-ct99#0053
+azoxistrobina + mancozebe + protioconazol (75 + 75 + 1050 g a.i./ha),2022/23,2022,63.0,godoy2023-cooperativos-2223-ct195#0053
+azoxistrobina + mancozebe + tebuconazol (82.25 + 98 + 1044.75 g a.i./ha),2015/16,2015,55.0,godoy2016-cooperativos-1516-ct119#0053
+azoxistrobina + mancozebe + tebuconazol (94 + 112 + 1194 g a.i./ha),2015/16,2015,59.0,godoy2016-cooperativos-1516-ct119#0057
+azoxistrobina + solatenol (60 + 30 g a.i./ha),2012/13,2012,84.0,godoy2013-cooperativos-1213-ct99#0069
+azoxistrobina + tebuconazol (60 + 100 g a.i./ha),2012/13,2012,61.0,godoy2013-cooperativos-1213-ct99#0045
+azoxistrobina + tebuconazol (62.5 + 125 g a.i./ha),2012/13,2012,56.0,godoy2013-cooperativos-1213-ct99#0049
+azoxistrobina + tebuconazol (72 + 96 g a.i./ha),2012/13,2012,57.0,godoy2013-cooperativos-1213-ct99#0041
+azoxistrobina + tetraconazol (50 + 50 g a.i./ha),2009/10,2009,75.0,godoy2010-cooperativos-0910-ct80#0033
+benzovindiflupir + picoxistrobina (60 + 30 g a.i./ha),2015/16,2015,78.0,godoy2016-cooperativos-1516-ct119#0069
+benzovindiflupir + picoxistrobina (60 + 30 g a.i./ha),2019/20,2019,61.0,godoy2020-cooperativos-1920-ct160#0037
+benzovindiflupir + protioconazol (67.5 + 33.75 g a.i./ha),2022/23,2022,52.0,godoy2023-cooperativos-2223-ct195#0025
+bixafen + ciproconazol + clorotalonil + epoxiconazol + fluxapiroxade / metominostrobina + mancozebe / picoxistrobina + protioconazol + tebuconazol + trifloxistrobina / piraclostrobina (dose not printed g a.i./ha),2019/20,2019,75.0,godoy2020-cooperativos-1920-ct160#0056
+bixafen + protioconazol + trifloxistrobina (62.5 + 87.5 + 75 g a.i./ha),2015/16,2015,71.0,godoy2016-cooperativos-1516-ct119#0065
+bixafen + protioconazol + trifloxistrobina (62.5 + 87.5 + 75 g a.i./ha),2019/20,2019,76.0,godoy2020-cooperativos-1920-ct160#0049
+bixafen + protioconazol + trifloxistrobina (62.5 + 87.5 + 75 g a.i./ha),2022/23,2022,57.0,godoy2023-cooperativos-2223-ct195#0033
+ciproconazol (30 g a.i./ha),2009/10,2009,39.0,godoy2010-cooperativos-0910-ct80#0009
+ciproconazol (30 g a.i./ha),2012/13,2012,46.0,godoy2013-cooperativos-1213-ct99#0009
+ciproconazol (30 g a.i./ha),2015/16,2015,26.0,godoy2016-cooperativos-1516-ct119#0009
+ciproconazol + clorotalonil + fluxapiroxade / bixafen + oxicloreto de cobre + picoxistrobina + protioconazol + tebuconazol / trifloxistrobina + trifloxistrobina / mancozebe (dose not printed g a.i./ha),2019/20,2019,79.0,godoy2020-cooperativos-1920-ct160#0053
+ciproconazol + picoxistrobina (54 + 24 g a.i./ha),2022/23,2022,41.0,godoy2023-cooperativos-2223-ct195#0005
+ciproconazol + picoxistrobina (60 + 24 g a.i./ha),2009/10,2009,81.0,godoy2010-cooperativos-0910-ct80#0025
+ciproconazol + picoxistrobina (60 + 24 g a.i./ha),2012/13,2012,68.0,godoy2013-cooperativos-1213-ct99#0025
+ciproconazol + picoxistrobina (60 + 24 g a.i./ha),2015/16,2015,51.0,godoy2016-cooperativos-1516-ct119#0021
+ciproconazol + picoxistrobina (60 + 24 g a.i./ha),2019/20,2019,50.0,godoy2020-cooperativos-1920-ct160#0005
+ciproconazol + trifloxistrobina (56.25 + 24 g a.i./ha),2009/10,2009,74.0,godoy2010-cooperativos-0910-ct80#0029
+ciproconazol + trifloxistrobina (75 + 32 g a.i./ha),2015/16,2015,50.0,godoy2016-cooperativos-1516-ct119#0025
+ciproconazol + trifloxistrobina (75 + 32 g a.i./ha),2019/20,2019,48.0,godoy2020-cooperativos-1920-ct160#0009
+clorotalonil + impirfluxam + metominostrobina (34.2 + 68.6 + 1142.8 g a.i./ha),2022/23,2022,67.0,godoy2023-cooperativos-2223-ct195#0045
+clorotalonil + tebuconazol (125 + 1125 g a.i./ha),2019/20,2019,70.0,godoy2020-cooperativos-1920-ct160#0021
+clorotalonil + tebuconazol (125 + 1125 g a.i./ha),2022/23,2022,60.0,godoy2023-cooperativos-2223-ct195#0041
+epoxiconazol + fluxapiroxad + piraclostrobina (64.8 + 40 + 40 g a.i./ha),2012/13,2012,76.0,godoy2013-cooperativos-1213-ct99#0061
+epoxiconazol + fluxapiroxade + piraclostrobina (64.8 + 40 + 40 g a.i./ha),2015/16,2015,69.0,godoy2016-cooperativos-1516-ct119#0061
+epoxiconazol + fluxapiroxade + piraclostrobina (65 + 40 + 40 g a.i./ha),2019/20,2019,64.0,godoy2020-cooperativos-1920-ct160#0045
+epoxiconazol + fluxapiroxade + piraclostrobina (65 + 40 + 40 g a.i./ha),2022/23,2022,44.0,godoy2023-cooperativos-2223-ct195#0037
+epoxiconazol + piraclostrobina (51 + 37.5 g a.i./ha),2009/10,2009,75.0,godoy2010-cooperativos-0910-ct80#0049
+epoxiconazol + piraclostrobina (65 + 40 g a.i./ha),2009/10,2009,77.0,godoy2010-cooperativos-0910-ct80#0045
+epoxiconazol + piraclostrobina (66.5 + 25 g a.i./ha),2009/10,2009,79.0,godoy2010-cooperativos-0910-ct80#0017
+epoxiconazol + piraclostrobina (66.5 + 25 g a.i./ha),2012/13,2012,61.0,godoy2013-cooperativos-1213-ct99#0021
+fluxapiroxad + piraclostrobina (99.9 + 50.1 g a.i./ha),2012/13,2012,71.0,godoy2013-cooperativos-1213-ct99#0065
+fluxapiroxade + mancozebe + protioconazol (63 + 45 + 880 g a.i./ha),2022/23,2022,69.0,godoy2023-cooperativos-2223-ct195#0057
+fluxapiroxade + oxicloreto de cobre (60 + 504 g a.i./ha),2019/20,2019,70.0,godoy2020-cooperativos-1920-ct160#0025
+fluxapiroxade + piraclostrobina (116.55 + 58.45 g a.i./ha),2015/16,2015,56.0,godoy2016-cooperativos-1516-ct119#0037
+fluxapiroxade + piraclostrobina (116.55 + 58.45 g a.i./ha),2019/20,2019,54.0,godoy2020-cooperativos-1920-ct160#0041
+fluxapiroxade + protioconazol (84 + 60 g a.i./ha),2022/23,2022,56.0,godoy2023-cooperativos-2223-ct195#0013
+impirfluxam + protioconazol (84 + 42 g a.i./ha),2022/23,2022,60.0,godoy2023-cooperativos-2223-ct195#0017
+impirfluxam + tebuconazol (140 + 42 g a.i./ha),2022/23,2022,63.0,godoy2023-cooperativos-2223-ct195#0021
+mancozebe + picoxistrobina + tebuconazol (1000 + 66.5 + 83.33 g a.i./ha),2019/20,2019,76.0,godoy2020-cooperativos-1920-ct160#0029
+mancozebe + picoxistrobina + tebuconazol (80 + 80 + 1200 g a.i./ha),2015/16,2015,64.0,godoy2016-cooperativos-1516-ct119#0049
+mancozebe + protioconazol (90 + 1125 g a.i./ha),2022/23,2022,61.0,godoy2023-cooperativos-2223-ct195#0049
+metconazol + piraclostrobina (65 + 40 g a.i./ha),2009/10,2009,78.0,godoy2010-cooperativos-0910-ct80#0041
+metominostrobina + tebuconazol (63.8 + 95.7 g a.i./ha),2012/13,2012,61.0,godoy2013-cooperativos-1213-ct99#0057
+metominostrobina + tebuconazol (79.75 + 119.63 g a.i./ha),2019/20,2019,62.0,godoy2020-cooperativos-1920-ct160#0017
+metominostrobina + tebuconazol (79.75 + 119.63 g a.i./ha),2022/23,2022,62.0,godoy2023-cooperativos-2223-ct195#0009
+picoxistrobina + tebuconazol (60 + 100 g a.i./ha),2012/13,2012,73.0,godoy2013-cooperativos-1213-ct99#0033
+picoxistrobina + tebuconazol (60 + 100 g a.i./ha),2015/16,2015,56.0,godoy2016-cooperativos-1516-ct119#0033
+protioconazol + trifloxistrobina (45 + 52.5 g a.i./ha),2009/10,2009,81.0,godoy2010-cooperativos-0910-ct80#0037
+protioconazol + trifloxistrobina (60 + 70 g a.i./ha),2012/13,2012,76.0,godoy2013-cooperativos-1213-ct99#0029
+protioconazol + trifloxistrobina (60 + 70 g a.i./ha),2015/16,2015,68.0,godoy2016-cooperativos-1516-ct119#0029
+protioconazol + trifloxistrobina (60 + 70 g a.i./ha),2019/20,2019,69.0,godoy2020-cooperativos-1920-ct160#0013
+tebuconazol (100 g a.i./ha),2009/10,2009,28.0,godoy2010-cooperativos-0910-ct80#0005
+tebuconazol (100 g a.i./ha),2012/13,2012,41.0,godoy2013-cooperativos-1213-ct99#0005
+tebuconazol (100 g a.i./ha),2015/16,2015,19.0,godoy2016-cooperativos-1516-ct119#0005
+tebuconazol + trifloxistrobina (50 + 100 g a.i./ha),2009/10,2009,71.0,godoy2010-cooperativos-0910-ct80#0021
