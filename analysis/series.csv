@@ -1,24 +1,24 @@
 season,status,doc_id,mean_table,publication,record_or_pdf,note
-2003/04,to_transcribe,,,Embrapa Soja Documentos 251 (2005),https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/467275/1/Resultadosdarededeensaiosparacontrolequimicodedoencasnaculturadasoja.Safra20032004.pdf,network results for several soybean diseases; take the rust section
-2004/05,to_transcribe,,,Embrapa Soja Documentos 266,https://www.infoteca.cnptia.embrapa.br/bitstream/doc/469065/1/documento266.pdf,joint analysis of 20 rust trials
-2005/06,to_find,,,,,15 trials per the Embrapa rust page; publication not yet identified
-2006/07,to_find,,,,,10 trials per the Embrapa rust page; publication not yet identified
-2007/08,to_find,,,,,7 trials per the Embrapa rust page; publication not yet identified
-2008/09,to_transcribe,,,Embrapa Soja Documentos 315 (2009),https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/573860/1/doc315online.pdf,"Reunião do Consórcio Antiferrugem, section with the summarized cooperative results; Documentos 317 has the per-site trials"
+2003/04,in_dataset,godoy2005-cooperativos-0304-doc251,Tabela 4.2,Embrapa Soja Documentos 251 (2005),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/467275,"joint analysis of 11 trials; control printed only as asterisk classes, so no control_efficacy_pct value"
+2004/05,in_dataset,godoy2005-cooperativos-0405-doc266,Tabela 5.3,Embrapa Soja Documentos 266 (2005),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/469065,joint analysis of 20 trials; Tabelas 5.4 and 5.5 split the same trials by first spray without or with symptoms
+2005/06,in_dataset,godoy2006-cooperativos-0506-doc272,Tabela 2,"Embrapa Soja Documentos 272 (2006), abstract D56",https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/469471,"mean of 15 trials; severity and yield only, no control column"
+2006/07,in_dataset,godoy2007-cooperativos-0607-ct42,Tabela 4; Tabela 6,Circular Técnica 42 (2007),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/470197,"two trial sets: triazoles (Tabela 4, 13 trials) and strobilurins and mixtures (Tabela 6, 10 trials); severity only, no control column"
+2007/08,not_published,,,,,"no national summary found; Documentos 310 (2008 meeting) asks for the network trials to be reactivated, so the network apparently did not run or was not summarized"
+2008/09,in_dataset,godoy2009-cooperativos-0809-ct69,Tabela 4,Circular Técnica 69 (2009),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/512915,"replaces Documentos 315; mean table has columns for all sites (trial_label Todos), sites without and with symptoms; only Todos counts"
 2009/10,in_dataset,godoy2010-cooperativos-0910-ct80,Tabela 3,Circular Técnica 80,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/863237,
-2010/11,to_transcribe,,,Circular Técnica 87 (2011),,record link to confirm
-2011/12,to_transcribe,,,Circular Técnica 93,,record link to confirm
+2010/11,in_dataset,godoy2011-cooperativos-1011-ct87,Tabela 3,Circular Técnica 87 (2011),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/900727,
+2011/12,in_dataset,godoy2012-cooperativos-1112-ct93,Tabela 3,Circular Técnica 93 (2012),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/927852,
 2012/13,in_dataset,godoy2013-cooperativos-1213-ct99,Tabela 3,Circular Técnica 99,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/966125,
-2013/14,to_transcribe,,,Circular Técnica 103 (2014),https://www.researchgate.net/publication/265301101,record link on Infoteca to confirm
-2014/15,to_transcribe,,,Circular Técnica 111 (2015),,a separate circular covers multisite fungicides and fertilizers in the same season
+2013/14,in_dataset,godoy2014-cooperativos-1314-ct103,Tabela 3,Circular Técnica 103 (2014),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/994285,
+2014/15,in_dataset,godoy2015-cooperativos-1415-ct111,Tabela 3,Circular Técnica 111 (2015),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1021068,
 2015/16,in_dataset,godoy2016-cooperativos-1516-ct119,Tabela 3,Circular Técnica 119,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1050910,
-2016/17,to_find,,,,,publication not yet identified
-2017/18,to_transcribe,,,Circular Técnica (number to confirm),https://www.researchgate.net/publication/329210346,34 trials considered for the summary
-2018/19,to_transcribe,,,Circular Técnica 148,https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1110595/1/CT148OL.pdf,
+2016/17,in_dataset,godoy2017-cooperativos-1617-ct129,Tabela 5,Circular Técnica 129 (2017),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1073132,
+2017/18,in_dataset,godoy2018-cooperativos-1718-ct138,Tabela 3,Circular Técnica 138 (2018),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1094386,
+2018/19,in_dataset,godoy2019-cooperativos-1819-ct148,Tabela 4,Circular Técnica 148 (2019),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1110595,
 2019/20,in_dataset,godoy2020-cooperativos-1920-ct160,Tabela 5,Circular Técnica 160,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1124331,
-2020/21,to_transcribe,,,Circular Técnica (number to confirm),,a separate circular covers multisite fungicides and a biological product (2020/21)
-2021/22,to_transcribe,,,Circular Técnica 187,https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1145904/1/Circ-Tec-187.pdf,
+2020/21,in_dataset,godoy2021-cooperativos-2021-ct174,Tabela 6,Circular Técnica 174 (2021),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1133872,
+2021/22,in_dataset,godoy2022-cooperativos-2122-ct187,Tabela 6,Circular Técnica 187 (2022),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1145904,
 2022/23,in_dataset,godoy2023-cooperativos-2223-ct195,Tabela 6,Circular Técnica 195,https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1154837,
-2023/24,to_transcribe,,,Circular Técnica 206 (2024),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1165843,
-2024/25,to_transcribe,,,Circular Técnica 219 (2025),https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1177349/1/Circ-Tec-219.pdf,
-2025/26,to_transcribe,,,Circular Técnica (number to confirm),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1188231,
+2023/24,in_dataset,godoy2024-cooperativos-2324-ct206,Tabela 6,Circular Técnica 206 (2024),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1165843,
+2024/25,in_dataset,godoy2025-cooperativos-2425-ct219,Tabela 5,Circular Técnica 219 (2025),https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1177349,
+2025/26,in_dataset,godoy2026-cooperativos-2526-ctrft7,Tabela 5,"Comunicado Técnico 7, Séries Técnicas Fitossanidade Tropical (RFT, 2026)",https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1188231,"Comunicado Técnico of the Rede Fitossanidade Tropical, not an Embrapa circular; deposited in Infoteca-e"

@@ -1,9 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "ferrugem-soja/schema.json",
+  "$id": "ferrugem-soja-serie/schema.json",
   "title": "Asian soybean rust (Phakopsora pachyrhizi) control trials in Brazil, one record per measured value",
-  "description": "Fixed output format for every extractor and every blind transcriber. Each document gives one JSON object {records, tables}: records are the measured values, tables is the inventory of every table and figure in the document with its cell count, so nothing can be skipped without showing it. Built from spodoptera-milho/schema.json v1.0 with the changes listed in spodoptera-milho/PILOTO.md ('O que mudar' and 'Conferência cega'). Source PDFs and record pages are in sources.json.",
-  "version": "2.0",
+  "description": "Fixed output format for every extractor and every blind transcriber. Each document gives one JSON object {records, tables}: records are the measured values, tables is the inventory of every table and figure in the document with its cell count, so nothing can be skipped without showing it. Built from spodoptera-milho/schema.json v1.0 with the changes listed in spodoptera-milho/PILOTO.md ('O que mudar' and 'Conferência cega'). Source PDFs and record pages are in ferrugem-soja-serie/sources.json. v2.1 is publico-soja/method/schema.json v2.0 with the doc_id list extended to the remaining cooperative summaries and a per-table declaration of inherited context; the record columns are unchanged, so new records merge into soybean_rust_trials.csv as they are.",
+  "version": "2.1",
   "changes_from_spodoptera_v1": [
     "Output is an object {records, tables} instead of a bare array; tables[] closes the cell count per table (data_cells = transcribed + skipped_cells).",
     "variable_standardized vocabulary rebuilt for rust trials (severity, control efficacy, defoliation, AUDPC, yield, grain weight, etc.), so 'other' should stay under 5%.",
@@ -33,7 +33,11 @@
     "When the document contradicts itself (text vs table, abstract vs table, two tables), record the value from the table and fill source_inconsistency with both values and pages ('Tabela 3 p5 gives 62; text p4 says 64'). Do not choose or correct.",
     "page is the PDF page number counted from 1 (first page of the file = 1), not the number printed on the page. Several PDFs are chapters cut from a larger volume whose printed page numbers start at 144 or 405.",
     "When one column mixes several things (e.g. 'Severidade/Desfolha'), split into separate records with the matching variable.",
-    "statistic_stated is true only when the document says what the number is ('média de 4 repetições', 'Média de 17 experimentos', 'total'). Otherwise statistic is 'mean' only when the table is a treatment-means table by context, and statistic_stated is false."
+    "statistic_stated is true only when the document says what the number is ('média de 4 repetições', 'Média de 17 experimentos', 'total'). Otherwise statistic is 'mean' only when the table is a treatment-means table by context, and statistic_stated is false.",
+    "INHERITED CONTEXT, ONCE PER TABLE. Every results, figure_labeled and text entry in tables[] carries inherited_context: one entry for each field in $defs.table.properties.inherited_context.required, no more and no less, each declared once. status = table_wide when one value printed outside the cells (methods, caption, footnote, Tabela 1 of places, another table) applies to every record of the table; varies_by_row when the value changes by row or column and is filled per record; not_printed when the document gives it nowhere; not_applicable when it does not apply (n_applications of a cultivar trial). table_wide needs value, source_page and a quote of at most 15 words from that page; not_printed needs pages_read, the pages searched. Records of the table then repeat the declared value; merge.py asserts that every record with status table_wide matches the declaration and that no field is declared twice or left out.",
+    "The declaration is not the check. In feijao-caupi (round 9) the transcribers answered the per-column question coherently with their own wrong reading in 58 columns. The quote and page of each table_wide or not_printed field exist so a script can search the methods text for timing ('próximo ao estádio R6', 'dias após', 'DAA', 'R5'), base ('por parcela', 'kg ha-1') and number of sprays, and send back any not_printed field whose marker it finds.",
+    "Cooperative summaries (this series): the mean table prints 'Média de N ensaios' or 'experimentos' in the caption; that text goes in design_notes, location stays null and season_or_year is the season printed in the caption. Application stages and number of sprays come from the methods (usually 'R1/R2 e intervalo de 14 a 21 dias' or 'aplicações em R2 e R5.1'). Columns C (%), %C, Controle and RP (%) are percentages computed from the means relative to the check or to the best treatment, so statistic = 'other' and statistic_stated = false, as adjudicated in ferrugem-soja.",
+    "Volumes: Documentos 251, 266 and 272 contain other diseases and, for 272, other abstracts. Transcribe only the PDF pages in sources.json scope_pages; tables of other diseases are not inventoried."
   ],
   "type": "object",
   "additionalProperties": false,
@@ -67,7 +71,8 @@
         "data_cells",
         "transcribed",
         "skipped_cells",
-        "skipped_reason"
+        "skipped_reason",
+        "inherited_context"
       ],
       "properties": {
         "page": {
@@ -112,8 +117,110 @@
             "string",
             "null"
           ]
+        },
+        "inherited_context": {
+          "description": "Context that the table passes to its records, one entry per field. Null only for design, weather and figure_unlabeled entries.",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "trial_label",
+            "location",
+            "affiliation",
+            "season_or_year",
+            "sowing_date",
+            "cultivar",
+            "crop_stage",
+            "crop_stage_refers_to",
+            "dose_and_unit",
+            "application_method",
+            "application_stages",
+            "n_applications",
+            "unit",
+            "n_reps",
+            "design_notes",
+            "statistic",
+            "statistic_stated"
+          ],
+          "properties": {
+            "trial_label": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "location": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "affiliation": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "season_or_year": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "sowing_date": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "cultivar": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "crop_stage": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "crop_stage_refers_to": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "dose_and_unit": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "application_method": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "application_stages": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "n_applications": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "unit": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "n_reps": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "design_notes": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "statistic": {
+              "$ref": "#/$defs/inherited_field"
+            },
+            "statistic_stated": {
+              "$ref": "#/$defs/inherited_field"
+            }
+          }
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "results",
+                  "figure_labeled",
+                  "text"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "inherited_context": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
     },
     "record": {
       "type": "object",
@@ -155,21 +262,38 @@
       ],
       "properties": {
         "doc_id": {
-          "description": "Document id from sources.json (also the PDF file name without .pdf).",
+          "description": "Document id from publico-soja/data/sources.csv or ferrugem-soja-serie/sources.json (also the PDF file name without .pdf).",
           "type": "string",
           "enum": [
             "abud2012-padf-1112",
             "costamilan2009-passofundo-0809",
             "fariasneto2009-reacao-cultivares",
             "gasparetto2011-campogrande-economia",
+            "godoy2005-cooperativos-0304-doc251",
+            "godoy2005-cooperativos-0405-doc266",
+            "godoy2006-cooperativos-0506-doc272",
+            "godoy2007-cooperativos-0607-ct42",
             "godoy2008-tratamento-sementes-epocas",
+            "godoy2009-cooperativos-0809-ct69",
             "godoy2009-momento-aplicacao",
             "godoy2010-cooperativos-0910-ct80",
+            "godoy2011-cooperativos-1011-ct87",
             "godoy2011-londrina-1011",
+            "godoy2012-cooperativos-1112-ct93",
             "godoy2013-cooperativos-1213-ct99",
+            "godoy2014-cooperativos-1314-ct103",
+            "godoy2015-cooperativos-1415-ct111",
             "godoy2016-cooperativos-1516-ct119",
+            "godoy2017-cooperativos-1617-ct129",
+            "godoy2018-cooperativos-1718-ct138",
+            "godoy2019-cooperativos-1819-ct148",
             "godoy2020-cooperativos-1920-ct160",
+            "godoy2021-cooperativos-2021-ct174",
+            "godoy2022-cooperativos-2122-ct187",
             "godoy2023-cooperativos-2223-ct195",
+            "godoy2024-cooperativos-2324-ct206",
+            "godoy2025-cooperativos-2425-ct219",
+            "godoy2026-cooperativos-2526-ctrft7",
             "melo2015-tolerancia-genotipos",
             "meyer2009-goiania-0809",
             "meyer2014-goias-central",
@@ -431,6 +555,130 @@
           ]
         }
       }
+    },
+    "inherited_field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "value",
+        "source_page",
+        "source_quote",
+        "pages_read"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "table_wide",
+            "varies_by_row",
+            "not_printed",
+            "not_applicable"
+          ]
+        },
+        "value": {
+          "description": "The value every record of the table takes, as printed. Null unless status = table_wide.",
+          "type": [
+            "string",
+            "integer",
+            "boolean",
+            "null"
+          ]
+        },
+        "source_page": {
+          "description": "PDF page where the value is printed. Required for table_wide.",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "source_quote": {
+          "description": "At most 15 words copied from source_page that state the value. Required for table_wide.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 140
+        },
+        "pages_read": {
+          "description": "Pages searched for the value. At least one for not_printed.",
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "table_wide"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "source_page": {
+                "type": "integer"
+              },
+              "source_quote": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "not_printed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "pages_read": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "varies_by_row",
+                  "not_printed",
+                  "not_applicable"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
     }
-  }
+  },
+  "changes_from_v2": [
+    "doc_id enum: the 17 cooperative summaries of this round added to the 20 documents of publico-soja.",
+    "tables[] entries carry inherited_context: each inheritable record field declared exactly once per table, with status, value, page, quote and pages read.",
+    "Rules added for inherited context, for the cooperative mean tables (%C and RP as statistic 'other') and for multi-topic volumes (scope_pages).",
+    "Record fields, types and vocabularies unchanged."
+  ]
 }

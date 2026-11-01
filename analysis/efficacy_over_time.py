@@ -13,6 +13,15 @@ every product did worse does not show up as a fall in each product.
 
 Usage: python -I efficacy_over_time.py
 Writes efficacy_by_season.csv and efficacy_trends.csv next to this file. Needs pandas.
+
+Changed for the full series (ferrugem-soja-serie, 2026-11-01); the publico-soja version runs next to it as
+efficacy_over_time_original.py, with its outputs on the same data in *_original_script.csv:
+- the ingredient list also splits on '&' (2020/21 prints 'picoxistrobina & ciproconazol') and old or
+  English spellings take the name the recent circulars use (2004/05 prints 'azoxystrobin', 'tebuconazole');
+- each dose goes with its ingredient before sorting, so 'tebuconazol + clorotalonil 125 + 1125' and
+  'clorotalonil + tebuconazol 1125 + 125' are the same product;
+- the columns for sites sprayed without or with symptoms (2008/09, trial_label 'Sem sintomas' and
+  'Com sintomas') are left out; only the all-sites column (Todos) is the national mean.
 """
 
 import re
@@ -27,18 +36,40 @@ MIN_SEASONS = 3
 ITERATIONS = 200
 
 
-def ingredients(text):
-	"""'azoxistrobina + ciproconazol' -> 'azoxistrobina + ciproconazol', in a fixed order."""
-	parts = [re.sub(r"\d+$", "", p.strip().lower()) for p in str(text).split("+")]
-	return " + ".join(sorted(p for p in parts if p))
+# Spellings of the older and English-language summaries, to the name the recent circulars print
+SAME_INGREDIENT = {
+	"azoxystrobin": "azoxistrobina", "ciproconazole": "ciproconazol", "epoxiconazole": "epoxiconazol",
+	"propiconazole": "propiconazol", "prothioconazol": "protioconazol", "protioconazole": "protioconazol",
+	"prothioconazole": "protioconazol", "tebuconazole": "tebuconazol", "tetraconazole": "tetraconazol",
+	"trifloxystrobin": "trifloxistrobina", "pyraclostrobin": "piraclostrobina", "difenoconazole": "difenoconazol",
+	"fluquinconazole": "fluquinconazol", "metconazole": "metconazol", "myclobutanil": "miclobutanil",
+	"bixafen": "bixafem", "fluxapyroxad": "fluxapiroxade", "fluxapiroxad": "fluxapiroxade",
+	"benzovindiflupyr": "benzovindiflupir", "impirfluxan": "impirfluxam", "carbendazin": "carbendazim",
+}
 
 
-def dose(text):
-	"""Grams of active ingredient per hectare, as printed before 'g i.a.' ('60 + 24')."""
-	match = re.search(r"([\d.,]+(?:\s*\+\s*[\d.,]+)*)\s*g\s*i\.\s*a\.", str(text))
+def ingredient_names(text):
+	parts = [re.sub(r"\d+$", "", p.strip().lower()) for p in re.split(r"[+&]", str(text))]
+	return [SAME_INGREDIENT.get(p, p) for p in parts if p]
+
+
+def dose_parts(text):
+	"""Grams of active ingredient per hectare, as printed before 'g i.a.' (['60', '24'])."""
+	match = re.search(r"([\d.,]+(?:\s*[+&]\s*[\d.,]+)*)\s*g\s*i\.\s*a\.", str(text))
 	if not match:
-		return ""
-	return " + ".join(p.strip().replace(".", "").replace(",", ".") for p in match.group(1).split("+"))
+		return []
+	return [p.strip().replace(".", "").replace(",", ".") for p in re.split(r"[+&]", match.group(1))]
+
+
+def product_label(ingredient_text, dose_text):
+	"""'tebuconazol + clorotalonil', '125 + 1125 g i.a./ha' -> 'clorotalonil + tebuconazol (1125 + 125 g a.i./ha)'."""
+	names, doses = ingredient_names(ingredient_text), dose_parts(dose_text)
+	if len(doses) == len(names):
+		pairs = sorted(zip(names, doses))
+		names, doses = [name for name, _ in pairs], [each_dose for _, each_dose in pairs]
+	else:
+		names = sorted(names)
+	return f"{' + '.join(names)} ({' + '.join(doses) or 'dose not printed'} g a.i./ha)"
 
 
 def load_series():
@@ -51,12 +82,14 @@ def load_series():
 			& (data.table_or_figure == s.mean_table)
 			& (data.variable_standardized == "control_efficacy_pct")
 			& data.active_ingredient_or_agent.notna()
+			# Sites without or with symptoms at the first spray are subsets; the all-sites column is the national mean
+			& ~data.trial_label.fillna("").isin(["Sem sintomas", "Com sintomas"])
 		]
 		for _, r in part.iterrows():
 			rows.append({
 				"season": s.season,
 				"year": int(s.season[:4]),
-				"product": f"{ingredients(r.active_ingredient_or_agent)} ({dose(r.dose_and_unit) or 'dose not printed'} g a.i./ha)",
+				"product": product_label(r.active_ingredient_or_agent, r.dose_and_unit),
 				"efficacy_pct": float(r.value),
 				"treatment_as_printed": r.treatment,
 				"record_id": r.record_id,
@@ -89,6 +122,10 @@ def fit(series):
 
 
 def main():
+	# The full-series fixes: dose follows its ingredient, '&' splits, English spellings match
+	assert product_label("tebuconazol + clorotalonil", "125 + 1125 g i.a./ha") == product_label("clorotalonil + tebuconazol", "1.125 + 125 g i.a./ha") == "clorotalonil + tebuconazol (1125 + 125 g a.i./ha)"
+	assert product_label("picoxistrobina & ciproconazol", "60 & 24 g i.a./ha") == product_label("picoxistrobina + ciproconazol1", "60 + 24 g i.a. ha-1")
+	assert product_label("azoxystrobin + ciproconazole", "60 + 24 g i.a./ha") == product_label("azoxistrobina + ciproconazol", "60 + 24 g i.a./ha")
 	series = load_series()
 	series.sort_values(["product", "year"]).to_csv(HERE / "efficacy_by_season.csv", index=False)
 	tracked, lines, season_effect = fit(series)

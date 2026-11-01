@@ -1,0 +1,309 @@
+ingredients,season,control_pct_computed,n_formulations,record_ids
+azoxistrobina,2003/04,73.8,1,godoy2005-cooperativos-0304-doc251#0002
+azoxistrobina,2006/07,47.5,1,godoy2007-cooperativos-0607-ct42#0171
+azoxistrobina,2011/12,56.3,1,godoy2012-cooperativos-1112-ct93#0012
+azoxistrobina,2012/13,47.4,1,godoy2013-cooperativos-1213-ct99#0012
+azoxistrobina,2013/14,16.7,1,godoy2014-cooperativos-1314-ct103#0013
+azoxistrobina,2014/15,22.2,1,godoy2015-cooperativos-1415-ct111#0013
+azoxistrobina,2015/16,24.3,1,godoy2016-cooperativos-1516-ct119#0012
+azoxistrobina,2016/17,19.9,1,godoy2017-cooperativos-1617-ct129#0157
+azoxistrobina + benzovindiflupir,2013/14,86.4,1,godoy2014-cooperativos-1314-ct103#0077
+azoxistrobina + benzovindiflupir,2014/15,82.3,1,godoy2015-cooperativos-1415-ct111#0037
+azoxistrobina + benzovindiflupir,2015/16,75.7,1,godoy2016-cooperativos-1516-ct119#0040
+azoxistrobina + benzovindiflupir,2016/17,67.4,1,godoy2017-cooperativos-1617-ct129#0185
+azoxistrobina + benzovindiflupir,2017/18,65.4,1,godoy2018-cooperativos-1718-ct138#0032
+azoxistrobina + benzovindiflupir,2019/20,50.1,1,godoy2020-cooperativos-1920-ct160#0032
+azoxistrobina + benzovindiflupir,2020/21,48.7,1,godoy2021-cooperativos-2021-ct174#0036
+azoxistrobina + benzovindiflupir,2021/22,44.6,1,godoy2022-cooperativos-2122-ct187#0032
+azoxistrobina + benzovindiflupir,2022/23,28.5,1,godoy2023-cooperativos-2223-ct195#0028
+azoxistrobina + benzovindiflupir + difenoconazol,2016/17,74.3,1,godoy2017-cooperativos-1617-ct129#0205
+azoxistrobina + benzovindiflupir + difenoconazol,2017/18,65.2,1,godoy2018-cooperativos-1718-ct138#0076
+azoxistrobina + ciproconazol,2003/04,90.3,1,godoy2005-cooperativos-0304-doc251#0012
+azoxistrobina + ciproconazol,2004/05,91.4,1,godoy2005-cooperativos-0405-doc266#0047
+azoxistrobina + ciproconazol,2006/07,68.9,1,godoy2007-cooperativos-0607-ct42#0177
+azoxistrobina + ciproconazol,2008/09,72.7,1,godoy2009-cooperativos-0809-ct69#0007
+azoxistrobina + ciproconazol,2009/10,78.5,1,godoy2010-cooperativos-0910-ct80#0012
+azoxistrobina + ciproconazol,2010/11,70.3,1,godoy2011-cooperativos-1011-ct87#0012
+azoxistrobina + ciproconazol,2011/12,67.2,1,godoy2012-cooperativos-1112-ct93#0016
+azoxistrobina + ciproconazol,2012/13,64.1,1,godoy2013-cooperativos-1213-ct99#0016
+azoxistrobina + ciproconazol,2013/14,45.5,1,godoy2014-cooperativos-1314-ct103#0017
+azoxistrobina + ciproconazol,2014/15,41.5,2,godoy2015-cooperativos-1415-ct111#0017; godoy2015-cooperativos-1415-ct111#0041
+azoxistrobina + ciproconazol,2015/16,41.8,2,godoy2016-cooperativos-1516-ct119#0016; godoy2016-cooperativos-1516-ct119#0044
+azoxistrobina + ciproconazol,2016/17,36.9,1,godoy2017-cooperativos-1617-ct129#0161
+azoxistrobina + ciproconazol,2017/18,28.4,1,godoy2018-cooperativos-1718-ct138#0004
+azoxistrobina + ciproconazol + mancozebe,2017/18,58.5,1,godoy2018-cooperativos-1718-ct138#0044
+azoxistrobina + ciproconazol + mancozebe,2018/19,67.5,1,godoy2019-cooperativos-1819-ct148#0045
+azoxistrobina + epoxiconazol,2010/11,59.7,1,godoy2011-cooperativos-1011-ct87#0067
+azoxistrobina + epoxiconazol,2011/12,58.9,1,godoy2012-cooperativos-1112-ct93#0056
+azoxistrobina + flutriafol,2011/12,60.0,1,godoy2012-cooperativos-1112-ct93#0060
+azoxistrobina + flutriafol,2012/13,54.6,2,godoy2013-cooperativos-1213-ct99#0036; godoy2013-cooperativos-1213-ct99#0052
+azoxistrobina + flutriafol,2013/14,25.0,2,godoy2014-cooperativos-1314-ct103#0037; godoy2014-cooperativos-1314-ct103#0061
+azoxistrobina + mancozebe + protioconazol,2021/22,72.0,1,godoy2022-cooperativos-2122-ct187#0060
+azoxistrobina + mancozebe + protioconazol,2022/23,63.2,1,godoy2023-cooperativos-2223-ct195#0052
+azoxistrobina + mancozebe + protioconazol,2023/24,62.3,1,godoy2024-cooperativos-2324-ct206#0058
+azoxistrobina + mancozebe + protioconazol,2024/25,63.2,1,godoy2025-cooperativos-2425-ct219#0061
+azoxistrobina + mancozebe + protioconazol,2025/26,66.6,1,godoy2026-cooperativos-2526-ctrft7#0038
+azoxistrobina + mancozebe + tebuconazol,2015/16,57.4,2,godoy2016-cooperativos-1516-ct119#0052; godoy2016-cooperativos-1516-ct119#0056
+azoxistrobina + mancozebe + tebuconazol,2016/17,55.9,1,godoy2017-cooperativos-1617-ct129#0197
+azoxistrobina + mancozebe + tebuconazol,2023/24,70.2,1,godoy2024-cooperativos-2324-ct206#0063
+azoxistrobina + mancozebe + tebuconazol,2024/25,71.0,1,godoy2025-cooperativos-2425-ct219#0051
+azoxistrobina + solatenol,2012/13,84.1,1,godoy2013-cooperativos-1213-ct99#0068
+azoxistrobina + tebuconazol,2010/11,60.5,1,godoy2011-cooperativos-1011-ct87#0059
+azoxistrobina + tebuconazol,2011/12,63.2,2,godoy2012-cooperativos-1112-ct93#0040; godoy2012-cooperativos-1112-ct93#0048
+azoxistrobina + tebuconazol,2012/13,57.8,3,godoy2013-cooperativos-1213-ct99#0040; godoy2013-cooperativos-1213-ct99#0044; godoy2013-cooperativos-1213-ct99#0048
+azoxistrobina + tebuconazol,2013/14,31.8,2,godoy2014-cooperativos-1314-ct103#0053; godoy2014-cooperativos-1314-ct103#0057
+azoxistrobina + tebuconazol,2014/15,26.2,2,godoy2015-cooperativos-1415-ct111#0045; godoy2015-cooperativos-1415-ct111#0049
+azoxistrobina + tetraconazol,2009/10,74.9,1,godoy2010-cooperativos-0910-ct80#0032
+azoxistrobina + tetraconazol,2010/11,65.0,1,godoy2011-cooperativos-1011-ct87#0032
+azoxistrobina + tetraconazol,2011/12,65.4,1,godoy2012-cooperativos-1112-ct93#0032
+azoxistrobina + tetraconazol,2013/14,37.9,1,godoy2014-cooperativos-1314-ct103#0045
+azoxistrobina nortox,2010/11,59.0,1,godoy2011-cooperativos-1011-ct87#0047
+azoxistrobina nortox + tebuconazol,2010/11,65.4,1,godoy2011-cooperativos-1011-ct87#0051
+benzovindiflupir + ciproconazol + clorotalonil + clorotalonil / protioconazol + fluxapiroxade / picoxistrobina + mancozebe / picoxistrobina + tebuconazol,2020/21,73.4,1,godoy2021-cooperativos-2021-ct174#0060
+benzovindiflupir + ciproconazol + difenoconazol,2017/18,76.8,1,godoy2018-cooperativos-1718-ct138#0068
+benzovindiflupir + ciproconazol + difenoconazol,2021/22,51.1,1,godoy2022-cooperativos-2122-ct187#0048
+benzovindiflupir + picoxistrobina,2015/16,78.4,1,godoy2016-cooperativos-1516-ct119#0068
+benzovindiflupir + picoxistrobina,2016/17,75.9,1,godoy2017-cooperativos-1617-ct129#0209
+benzovindiflupir + picoxistrobina,2017/18,73.2,1,godoy2018-cooperativos-1718-ct138#0036
+benzovindiflupir + picoxistrobina,2018/19,66.9,1,godoy2019-cooperativos-1819-ct148#0037
+benzovindiflupir + picoxistrobina,2019/20,61.2,1,godoy2020-cooperativos-1920-ct160#0036
+benzovindiflupir + picoxistrobina,2020/21,58.0,1,godoy2021-cooperativos-2021-ct174#0040
+benzovindiflupir + picoxistrobina,2021/22,55.5,1,godoy2022-cooperativos-2122-ct187#0040
+benzovindiflupir + protioconazol,2022/23,51.6,1,godoy2023-cooperativos-2223-ct195#0024
+bixafem + ciproconazol + clorotalonil + epoxiconazol + fluxapiroxade / metominostrobina + mancozebe / picoxistrobina + protioconazol + tebuconazol + trifloxistrobina / piraclostrobina,2019/20,74.6,1,godoy2020-cooperativos-1920-ct160#0055
+bixafem + protioconazol + trifloxistrobina,2013/14,80.3,1,godoy2014-cooperativos-1314-ct103#0073
+bixafem + protioconazol + trifloxistrobina,2014/15,76.1,1,godoy2015-cooperativos-1415-ct111#0057
+bixafem + protioconazol + trifloxistrobina,2015/16,71.6,1,godoy2016-cooperativos-1516-ct119#0064
+bixafem + protioconazol + trifloxistrobina,2016/17,74.3,1,godoy2017-cooperativos-1617-ct129#0201
+bixafem + protioconazol + trifloxistrobina,2017/18,72.3,1,godoy2018-cooperativos-1718-ct138#0052
+bixafem + protioconazol + trifloxistrobina,2018/19,75.7,1,godoy2019-cooperativos-1819-ct148#0049
+bixafem + protioconazol + trifloxistrobina,2019/20,75.6,1,godoy2020-cooperativos-1920-ct160#0048
+bixafem + protioconazol + trifloxistrobina,2020/21,73.3,1,godoy2021-cooperativos-2021-ct174#0052
+bixafem + protioconazol + trifloxistrobina,2021/22,71.3,1,godoy2022-cooperativos-2122-ct187#0056
+bixafem + protioconazol + trifloxistrobina,2022/23,57.3,1,godoy2023-cooperativos-2223-ct195#0032
+bixafem + protioconazol + trifloxistrobina,2023/24,61.7,1,godoy2024-cooperativos-2324-ct206#0024
+carbendazim + cresoxim-metílico + tebuconazol,2018/19,49.7,1,godoy2019-cooperativos-1819-ct148#0029
+carbendazim + flusilazole,2004/05,81.8,2,godoy2005-cooperativos-0405-doc266#0059; godoy2005-cooperativos-0405-doc266#0061
+carbendazim + flutriafol,2006/07,59.0,1,godoy2007-cooperativos-0607-ct42#0198
+ciproconazol,2005/06,71.3,1,godoy2006-cooperativos-0506-doc272#0025
+ciproconazol,2006/07,44.1,1,godoy2007-cooperativos-0607-ct42#0063
+ciproconazol,2009/10,38.5,1,godoy2010-cooperativos-0910-ct80#0008
+ciproconazol,2010/11,30.0,1,godoy2011-cooperativos-1011-ct87#0008
+ciproconazol,2011/12,48.1,1,godoy2012-cooperativos-1112-ct93#0008
+ciproconazol,2012/13,46.2,1,godoy2013-cooperativos-1213-ct99#0008
+ciproconazol,2013/14,24.2,1,godoy2014-cooperativos-1314-ct103#0009
+ciproconazol,2014/15,26.7,1,godoy2015-cooperativos-1415-ct111#0009
+ciproconazol,2015/16,25.7,1,godoy2016-cooperativos-1516-ct119#0008
+ciproconazol,2016/17,22.9,1,godoy2017-cooperativos-1617-ct129#0153
+ciproconazol + clorotalonil + fluxapiroxade / bixafen + oxicloreto de cobre + picoxistrobina + protioconazol + tebuconazol / trifloxistrobina + trifloxistrobina / mancozebe,2019/20,78.6,1,godoy2020-cooperativos-1920-ct160#0052
+ciproconazol + difenoconazol,2021/22,34.1,1,godoy2022-cooperativos-2122-ct187#0004
+ciproconazol + oxicloreto de cobre + picoxistrobina,2024/25,66.5,1,godoy2025-cooperativos-2425-ct219#0023
+ciproconazol + picoxistrobina,2006/07,67.2,1,godoy2007-cooperativos-0607-ct42#0201
+ciproconazol + picoxistrobina,2008/09,69.7,1,godoy2009-cooperativos-0809-ct69#0091
+ciproconazol + picoxistrobina,2009/10,80.9,1,godoy2010-cooperativos-0910-ct80#0024
+ciproconazol + picoxistrobina,2010/11,73.3,1,godoy2011-cooperativos-1011-ct87#0024
+ciproconazol + picoxistrobina,2011/12,69.5,1,godoy2012-cooperativos-1112-ct93#0024
+ciproconazol + picoxistrobina,2012/13,67.8,1,godoy2013-cooperativos-1213-ct99#0024
+ciproconazol + picoxistrobina,2013/14,59.1,1,godoy2014-cooperativos-1314-ct103#0025
+ciproconazol + picoxistrobina,2014/15,58.0,1,godoy2015-cooperativos-1415-ct111#0021
+ciproconazol + picoxistrobina,2015/16,50.0,1,godoy2016-cooperativos-1516-ct119#0020
+ciproconazol + picoxistrobina,2016/17,51.2,1,godoy2017-cooperativos-1617-ct129#0165
+ciproconazol + picoxistrobina,2017/18,54.8,2,godoy2018-cooperativos-1718-ct138#0008; godoy2018-cooperativos-1718-ct138#0056
+ciproconazol + picoxistrobina,2018/19,51.3,1,godoy2019-cooperativos-1819-ct148#0009
+ciproconazol + picoxistrobina,2019/20,49.9,1,godoy2020-cooperativos-1920-ct160#0004
+ciproconazol + picoxistrobina,2020/21,47.6,1,godoy2021-cooperativos-2021-ct174#0004
+ciproconazol + picoxistrobina,2022/23,41.1,1,godoy2023-cooperativos-2223-ct195#0004
+ciproconazol + picoxistrobina,2023/24,42.5,1,godoy2024-cooperativos-2324-ct206#0004
+ciproconazol + propiconazol,2004/05,88.1,1,godoy2005-cooperativos-0405-doc266#0057
+ciproconazol + propiconazol,2005/06,70.2,1,godoy2006-cooperativos-0506-doc272#0031
+ciproconazol + propiconazol,2006/07,52.5,1,godoy2007-cooperativos-0607-ct42#0066
+ciproconazol + propiconazol,2008/09,48.5,1,godoy2009-cooperativos-0809-ct69#0013
+ciproconazol + trifloxistrobina,2003/04,91.2,1,godoy2005-cooperativos-0304-doc251#0011
+ciproconazol + trifloxistrobina,2005/06,78.9,1,godoy2006-cooperativos-0506-doc272#0023
+ciproconazol + trifloxistrobina,2006/07,68.9,1,godoy2007-cooperativos-0607-ct42#0180
+ciproconazol + trifloxistrobina,2008/09,63.6,1,godoy2009-cooperativos-0809-ct69#0079
+ciproconazol + trifloxistrobina,2009/10,73.8,1,godoy2010-cooperativos-0910-ct80#0028
+ciproconazol + trifloxistrobina,2010/11,63.6,1,godoy2011-cooperativos-1011-ct87#0028
+ciproconazol + trifloxistrobina,2015/16,50.0,1,godoy2016-cooperativos-1516-ct119#0024
+ciproconazol + trifloxistrobina,2016/17,55.3,1,godoy2017-cooperativos-1617-ct129#0169
+ciproconazol + trifloxistrobina,2017/18,53.6,1,godoy2018-cooperativos-1718-ct138#0012
+ciproconazol + trifloxistrobina,2018/19,54.3,1,godoy2019-cooperativos-1819-ct148#0013
+ciproconazol + trifloxistrobina,2019/20,48.4,1,godoy2020-cooperativos-1920-ct160#0008
+ciproconazol + trifloxistrobina,2020/21,52.7,1,godoy2021-cooperativos-2021-ct174#0008
+ciproconazol e clorotalonil + clorotalonil / mancozebe + picoxistrobina + protioconazol e mancozebe / difenoconazol + tebuconazol + tebuconazol / picoxistrobina,2021/22,73.2,1,godoy2022-cooperativos-2122-ct187#0068
+clorotalonil + difenoconazol + trifloxistrobina,2023/24,50.7,1,godoy2024-cooperativos-2324-ct206#0049
+clorotalonil + impirfluxam + metominostrobina,2022/23,66.8,1,godoy2023-cooperativos-2223-ct195#0044
+clorotalonil + impirfluxam + metominostrobina,2023/24,65.9,1,godoy2024-cooperativos-2324-ct206#0044
+clorotalonil + impirfluxam + metominostrobina,2024/25,66.8,1,godoy2025-cooperativos-2425-ct219#0019
+clorotalonil + impirfluxam + metominostrobina,2025/26,68.0,1,godoy2026-cooperativos-2526-ctrft7#0014
+clorotalonil + impirfluxam + metominostrobina + protioconazol + tebuconazol / clorotalonil + tebuconazol / impirfluxam + trifloxistrobina e mancozebe / clorotalonil,2025/26,69.6,1,godoy2026-cooperativos-2526-ctrft7#0048
+clorotalonil + protioconazol,2024/25,67.9,1,godoy2025-cooperativos-2425-ct219#0014
+clorotalonil + tebuconazol,2017/18,63.5,1,godoy2018-cooperativos-1718-ct138#0048
+clorotalonil + tebuconazol,2018/19,59.0,1,godoy2019-cooperativos-1819-ct148#0005
+clorotalonil + tebuconazol,2019/20,69.6,1,godoy2020-cooperativos-1920-ct160#0020
+clorotalonil + tebuconazol,2020/21,71.1,1,godoy2021-cooperativos-2021-ct174#0024
+clorotalonil + tebuconazol,2021/22,66.6,1,godoy2022-cooperativos-2122-ct187#0020
+clorotalonil + tebuconazol,2022/23,60.4,1,godoy2023-cooperativos-2223-ct195#0040
+clorotalonil + tebuconazol,2023/24,58.3,2,godoy2024-cooperativos-2324-ct206#0034; godoy2024-cooperativos-2324-ct206#0039
+clorotalonil + tebuconazol,2024/25,67.4,2,godoy2025-cooperativos-2425-ct219#0004; godoy2025-cooperativos-2425-ct219#0009
+clorotalonil + tebuconazol,2025/26,69.0,2,godoy2026-cooperativos-2526-ctrft7#0004; godoy2026-cooperativos-2526-ctrft7#0009
+difenoconazol,2003/04,59.0,1,godoy2005-cooperativos-0304-doc251#0003
+difenoconazol,2006/07,20.3,1,godoy2007-cooperativos-0607-ct42#0069
+difenoconazol + mancozebe / azoxistrobina + mancozebe / clorotalonil + oxicloreto de cobre + protioconazol + tebuconazol + tebuconazol + trifloxistrobina + trifloxistrobina / fluxapiroxade,2023/24,64.6,1,godoy2024-cooperativos-2324-ct206#0073
+epoxiconazol,2003/04,84.3,1,godoy2005-cooperativos-0304-doc251#0015
+epoxiconazol,2004/05,86.0,1,godoy2005-cooperativos-0405-doc266#0049
+epoxiconazol,2005/06,65.7,1,godoy2006-cooperativos-0506-doc272#0029
+epoxiconazol,2006/07,31.4,2,godoy2007-cooperativos-0607-ct42#0072; godoy2007-cooperativos-0607-ct42#0075
+epoxiconazol,2008/09,34.8,1,godoy2009-cooperativos-0809-ct69#0019
+epoxiconazol + fluopyraxad + piraclostrobina,2011/12,75.1,1,godoy2012-cooperativos-1112-ct93#0036
+epoxiconazol + fluxapiroxade + piraclostrobina,2012/13,75.6,1,godoy2013-cooperativos-1213-ct99#0060
+epoxiconazol + fluxapiroxade + piraclostrobina,2013/14,71.2,1,godoy2014-cooperativos-1314-ct103#0069
+epoxiconazol + fluxapiroxade + piraclostrobina,2014/15,69.2,1,godoy2015-cooperativos-1415-ct111#0053
+epoxiconazol + fluxapiroxade + piraclostrobina,2015/16,68.9,1,godoy2016-cooperativos-1516-ct119#0060
+epoxiconazol + fluxapiroxade + piraclostrobina,2016/17,68.2,1,godoy2017-cooperativos-1617-ct129#0189
+epoxiconazol + fluxapiroxade + piraclostrobina,2017/18,72.7,1,godoy2018-cooperativos-1718-ct138#0040
+epoxiconazol + fluxapiroxade + piraclostrobina,2018/19,66.5,1,godoy2019-cooperativos-1819-ct148#0041
+epoxiconazol + fluxapiroxade + piraclostrobina,2019/20,63.8,1,godoy2020-cooperativos-1920-ct160#0044
+epoxiconazol + fluxapiroxade + piraclostrobina,2020/21,58.0,1,godoy2021-cooperativos-2021-ct174#0048
+epoxiconazol + fluxapiroxade + piraclostrobina,2021/22,59.0,1,godoy2022-cooperativos-2122-ct187#0052
+epoxiconazol + fluxapiroxade + piraclostrobina,2022/23,43.9,1,godoy2023-cooperativos-2223-ct195#0036
+epoxiconazol + fluxapiroxade + piraclostrobina,2023/24,48.5,1,godoy2024-cooperativos-2324-ct206#0029
+epoxiconazol + piraclostrobina,2003/04,87.5,1,godoy2005-cooperativos-0304-doc251#0010
+epoxiconazol + piraclostrobina,2006/07,57.4,1,godoy2007-cooperativos-0607-ct42#0183
+epoxiconazol + piraclostrobina,2008/09,68.2,1,godoy2009-cooperativos-0809-ct69#0037
+epoxiconazol + piraclostrobina,2009/10,77.1,3,godoy2010-cooperativos-0910-ct80#0016; godoy2010-cooperativos-0910-ct80#0044; godoy2010-cooperativos-0910-ct80#0048
+epoxiconazol + piraclostrobina,2010/11,71.0,2,godoy2011-cooperativos-1011-ct87#0016; godoy2011-cooperativos-1011-ct87#0043
+epoxiconazol + piraclostrobina,2011/12,68.1,1,godoy2012-cooperativos-1112-ct93#0020
+epoxiconazol + piraclostrobina,2012/13,60.6,1,godoy2013-cooperativos-1213-ct99#0020
+epoxiconazol + piraclostrobina,2013/14,25.8,1,godoy2014-cooperativos-1314-ct103#0021
+famaxadone + flusilazole,2004/05,83.1,1,godoy2005-cooperativos-0405-doc266#0063
+fenarimol,2004/05,55.2,1,godoy2005-cooperativos-0405-doc266#0069
+fluindapir + protioconazol,2017/18,66.7,1,godoy2018-cooperativos-1718-ct138#0084
+fluindapir + tetraconazol,2017/18,67.5,1,godoy2018-cooperativos-1718-ct138#0080
+fluquinconazol,2003/04,67.4,1,godoy2005-cooperativos-0304-doc251#0005
+fluquinconazol,2006/07,18.6,1,godoy2007-cooperativos-0607-ct42#0078
+flutriafol,2003/04,92.4,1,godoy2005-cooperativos-0304-doc251#0006
+flutriafol,2006/07,42.4,1,godoy2007-cooperativos-0607-ct42#0081
+flutriafol,2008/09,34.8,1,godoy2009-cooperativos-0809-ct69#0025
+flutriafol + tiofanato metílico,2004/05,90.3,1,godoy2005-cooperativos-0405-doc266#0065
+flutriafol + tiofanato metílico,2006/07,53.3,2,godoy2007-cooperativos-0607-ct42#0192; godoy2007-cooperativos-0607-ct42#0195
+flutriafol + tiofanato metílico,2008/09,39.4,1,godoy2009-cooperativos-0809-ct69#0073
+fluxapiroxade + mancozebe + protioconazol,2022/23,69.1,1,godoy2023-cooperativos-2223-ct195#0056
+fluxapiroxade + mancozebe + protioconazol,2023/24,70.9,1,godoy2024-cooperativos-2324-ct206#0054
+fluxapiroxade + mancozebe + protioconazol,2024/25,73.0,1,godoy2025-cooperativos-2425-ct219#0056
+fluxapiroxade + oxicloreto de cobre,2017/18,72.0,1,godoy2018-cooperativos-1718-ct138#0060
+fluxapiroxade + oxicloreto de cobre,2019/20,69.6,1,godoy2020-cooperativos-1920-ct160#0024
+fluxapiroxade + oxicloreto de cobre,2020/21,67.9,1,godoy2021-cooperativos-2021-ct174#0028
+fluxapiroxade + piraclostrobina,2012/13,70.6,1,godoy2013-cooperativos-1213-ct99#0064
+fluxapiroxade + piraclostrobina,2013/14,60.6,1,godoy2014-cooperativos-1314-ct103#0049
+fluxapiroxade + piraclostrobina,2014/15,64.5,1,godoy2015-cooperativos-1415-ct111#0033
+fluxapiroxade + piraclostrobina,2015/16,56.8,1,godoy2016-cooperativos-1516-ct119#0036
+fluxapiroxade + piraclostrobina,2016/17,59.6,1,godoy2017-cooperativos-1617-ct129#0181
+fluxapiroxade + piraclostrobina,2017/18,66.7,1,godoy2018-cooperativos-1718-ct138#0028
+fluxapiroxade + piraclostrobina,2019/20,54.0,1,godoy2020-cooperativos-1920-ct160#0040
+fluxapiroxade + piraclostrobina,2020/21,54.6,1,godoy2021-cooperativos-2021-ct174#0044
+fluxapiroxade + piraclostrobina,2021/22,52.3,1,godoy2022-cooperativos-2122-ct187#0044
+fluxapiroxade + protioconazol,2020/21,73.6,1,godoy2021-cooperativos-2021-ct174#0032
+fluxapiroxade + protioconazol,2021/22,68.7,1,godoy2022-cooperativos-2122-ct187#0028
+fluxapiroxade + protioconazol,2022/23,56.1,1,godoy2023-cooperativos-2223-ct195#0012
+impirfluxam + protioconazol,2022/23,60.2,1,godoy2023-cooperativos-2223-ct195#0016
+impirfluxam + protioconazol,2023/24,56.8,1,godoy2024-cooperativos-2324-ct206#0014
+impirfluxam + protioconazol,2025/26,62.1,1,godoy2026-cooperativos-2526-ctrft7#0028
+impirfluxam + protioconazol + trifloxistrobina,2024/25,62.9,1,godoy2025-cooperativos-2425-ct219#0027
+impirfluxam + protioconazol + trifloxistrobina,2025/26,69.7,1,godoy2026-cooperativos-2526-ctrft7#0019
+impirfluxam + protioconazol + trifloxistrobina e mancozebe,2024/25,74.6,1,godoy2025-cooperativos-2425-ct219#0032
+impirfluxam + protioconazol + trifloxistrobina e mancozebe,2025/26,79.5,1,godoy2026-cooperativos-2526-ctrft7#0024
+impirfluxam + protioconazol e mancozebe,2024/25,73.7,1,godoy2025-cooperativos-2425-ct219#0036
+impirfluxam + protioconazol e mancozebe,2025/26,74.1,1,godoy2026-cooperativos-2526-ctrft7#0033
+impirfluxam + tebuconazol,2017/18,80.0,1,godoy2018-cooperativos-1718-ct138#0064
+impirfluxam + tebuconazol,2022/23,62.8,1,godoy2023-cooperativos-2223-ct195#0020
+impirfluxam + tebuconazol,2023/24,59.1,1,godoy2024-cooperativos-2324-ct206#0019
+impirfluxam + tebuconazol e mancozebe,2024/25,72.9,1,godoy2025-cooperativos-2425-ct219#0041
+mancozebe + picoxistrobina + protioconazol,2024/25,73.3,1,godoy2025-cooperativos-2425-ct219#0066
+mancozebe + picoxistrobina + protioconazol,2025/26,71.4,1,godoy2026-cooperativos-2526-ctrft7#0043
+mancozebe + picoxistrobina + tebuconazol,2015/16,63.5,1,godoy2016-cooperativos-1516-ct119#0048
+mancozebe + picoxistrobina + tebuconazol,2016/17,64.8,1,godoy2017-cooperativos-1617-ct129#0193
+mancozebe + picoxistrobina + tebuconazol,2017/18,71.2,1,godoy2018-cooperativos-1718-ct138#0072
+mancozebe + picoxistrobina + tebuconazol,2018/19,78.7,1,godoy2019-cooperativos-1819-ct148#0052
+mancozebe + picoxistrobina + tebuconazol,2019/20,76.2,1,godoy2020-cooperativos-1920-ct160#0028
+mancozebe + picoxistrobina + tebuconazol,2020/21,80.5,1,godoy2021-cooperativos-2021-ct174#0056
+mancozebe + picoxistrobina + tebuconazol,2021/22,77.2,1,godoy2022-cooperativos-2122-ct187#0064
+mancozebe + picoxistrobina + tebuconazol,2024/25,75.9,1,godoy2025-cooperativos-2425-ct219#0046
+mancozebe + protioconazol,2021/22,73.5,1,godoy2022-cooperativos-2122-ct187#0024
+mancozebe + protioconazol,2022/23,61.5,1,godoy2023-cooperativos-2223-ct195#0048
+metconazol,2006/07,54.2,1,godoy2007-cooperativos-0607-ct42#0108
+metconazol,2008/09,42.4,1,godoy2009-cooperativos-0809-ct69#0031
+metconazol + piraclostrobina,2009/10,78.1,1,godoy2010-cooperativos-0910-ct80#0040
+metconazol + piraclostrobina,2010/11,74.8,1,godoy2011-cooperativos-1011-ct87#0040
+metconazol + piraclostrobina,2013/14,27.3,1,godoy2014-cooperativos-1314-ct103#0041
+metominostrobina + tebuconazol,2011/12,61.2,1,godoy2012-cooperativos-1112-ct93#0044
+metominostrobina + tebuconazol,2012/13,61.1,1,godoy2013-cooperativos-1213-ct99#0056
+metominostrobina + tebuconazol,2013/14,43.9,1,godoy2014-cooperativos-1314-ct103#0065
+metominostrobina + tebuconazol,2017/18,56.2,1,godoy2018-cooperativos-1718-ct138#0024
+metominostrobina + tebuconazol,2018/19,57.2,1,godoy2019-cooperativos-1819-ct148#0021
+metominostrobina + tebuconazol,2019/20,62.4,1,godoy2020-cooperativos-1920-ct160#0016
+metominostrobina + tebuconazol,2020/21,70.0,1,godoy2021-cooperativos-2021-ct174#0020
+metominostrobina + tebuconazol,2021/22,67.6,1,godoy2022-cooperativos-2122-ct187#0016
+metominostrobina + tebuconazol,2022/23,61.6,1,godoy2023-cooperativos-2223-ct195#0008
+metominostrobina + tebuconazol,2023/24,59.8,1,godoy2024-cooperativos-2324-ct206#0009
+miclobutanil,2003/04,80.5,1,godoy2005-cooperativos-0304-doc251#0009
+miclobutanil,2004/05,80.7,1,godoy2005-cooperativos-0405-doc266#0071
+miclobutanil,2006/07,20.3,1,godoy2007-cooperativos-0607-ct42#0084
+oxicarboxina,2010/11,18.9,1,godoy2011-cooperativos-1011-ct87#0055
+oxicloreto de cobre + tebuconazol + trifloxistrobina,2023/24,66.9,1,godoy2024-cooperativos-2324-ct206#0068
+picoxistrobina,2006/07,52.5,1,godoy2007-cooperativos-0607-ct42#0174
+picoxistrobina + protioconazol,2021/22,65.1,1,godoy2022-cooperativos-2122-ct187#0036
+picoxistrobina + tebuconazol,2010/11,79.8,1,godoy2011-cooperativos-1011-ct87#0063
+picoxistrobina + tebuconazol,2011/12,73.7,1,godoy2012-cooperativos-1112-ct93#0052
+picoxistrobina + tebuconazol,2012/13,73.1,1,godoy2013-cooperativos-1213-ct99#0032
+picoxistrobina + tebuconazol,2013/14,68.2,1,godoy2014-cooperativos-1314-ct103#0033
+picoxistrobina + tebuconazol,2014/15,64.4,1,godoy2015-cooperativos-1415-ct111#0029
+picoxistrobina + tebuconazol,2015/16,56.8,1,godoy2016-cooperativos-1516-ct119#0032
+picoxistrobina + tebuconazol,2016/17,61.8,1,godoy2017-cooperativos-1617-ct129#0177
+picoxistrobina + tebuconazol,2017/18,62.6,1,godoy2018-cooperativos-1718-ct138#0020
+picoxistrobina + tebuconazol,2018/19,65.2,1,godoy2019-cooperativos-1819-ct148#0025
+picoxistrobina + tebuconazol,2021/22,63.9,1,godoy2022-cooperativos-2122-ct187#0008
+propiconazol,2003/04,72.0,1,godoy2005-cooperativos-0304-doc251#0014
+propiconazol,2006/07,32.2,1,godoy2007-cooperativos-0607-ct42#0087
+propiconazol + trifloxistrobina,2003/04,69.7,1,godoy2005-cooperativos-0304-doc251#0013
+propiconazol + trifloxistrobina,2006/07,52.5,1,godoy2007-cooperativos-0607-ct42#0186
+protioconazol,2005/06,79.5,1,godoy2006-cooperativos-0506-doc272#0027
+protioconazol,2006/07,61.0,1,godoy2007-cooperativos-0607-ct42#0111
+protioconazol + trifloxistrobina,2009/10,81.1,1,godoy2010-cooperativos-0910-ct80#0036
+protioconazol + trifloxistrobina,2010/11,78.4,1,godoy2011-cooperativos-1011-ct87#0036
+protioconazol + trifloxistrobina,2011/12,74.7,1,godoy2012-cooperativos-1112-ct93#0028
+protioconazol + trifloxistrobina,2012/13,76.0,1,godoy2013-cooperativos-1213-ct99#0028
+protioconazol + trifloxistrobina,2013/14,75.8,1,godoy2014-cooperativos-1314-ct103#0029
+protioconazol + trifloxistrobina,2014/15,74.4,1,godoy2015-cooperativos-1415-ct111#0025
+protioconazol + trifloxistrobina,2015/16,67.6,1,godoy2016-cooperativos-1516-ct119#0028
+protioconazol + trifloxistrobina,2016/17,69.3,1,godoy2017-cooperativos-1617-ct129#0173
+protioconazol + trifloxistrobina,2017/18,63.1,1,godoy2018-cooperativos-1718-ct138#0016
+protioconazol + trifloxistrobina,2018/19,69.6,1,godoy2019-cooperativos-1819-ct148#0033
+protioconazol + trifloxistrobina,2019/20,69.0,1,godoy2020-cooperativos-1920-ct160#0012
+protioconazol + trifloxistrobina,2020/21,66.8,1,godoy2021-cooperativos-2021-ct174#0016
+s-2399 260 sc + tebuconazol,2016/17,81.0,1,godoy2017-cooperativos-1617-ct129#0213
+tebuconazol,2003/04,90.0,2,godoy2005-cooperativos-0304-doc251#0007; godoy2005-cooperativos-0304-doc251#0008
+tebuconazol,2004/05,90.0,2,godoy2005-cooperativos-0405-doc266#0045; godoy2005-cooperativos-0405-doc266#0053
+tebuconazol,2005/06,77.1,1,godoy2006-cooperativos-0506-doc272#0021
+tebuconazol,2006/07,61.9,5,godoy2007-cooperativos-0607-ct42#0090; godoy2007-cooperativos-0607-ct42#0093; godoy2007-cooperativos-0607-ct42#0096; godoy2007-cooperativos-0607-ct42#0099; godoy2007-cooperativos-0607-ct42#0204
+tebuconazol,2008/09,41.9,3,godoy2009-cooperativos-0809-ct69#0043; godoy2009-cooperativos-0809-ct69#0049; godoy2009-cooperativos-0809-ct69#0067
+tebuconazol,2009/10,28.1,1,godoy2010-cooperativos-0910-ct80#0004
+tebuconazol,2010/11,26.0,1,godoy2011-cooperativos-1011-ct87#0004
+tebuconazol,2011/12,35.8,1,godoy2012-cooperativos-1112-ct93#0004
+tebuconazol,2012/13,40.6,1,godoy2013-cooperativos-1213-ct99#0004
+tebuconazol,2013/14,15.2,1,godoy2014-cooperativos-1314-ct103#0005
+tebuconazol,2014/15,18.1,1,godoy2015-cooperativos-1415-ct111#0005
+tebuconazol,2015/16,18.9,1,godoy2016-cooperativos-1516-ct119#0004
+tebuconazol,2016/17,17.8,1,godoy2017-cooperativos-1617-ct129#0149
+tebuconazol + trifloxistrobina,2004/05,89.0,1,godoy2005-cooperativos-0405-doc266#0067
+tebuconazol + trifloxistrobina,2006/07,70.5,1,godoy2007-cooperativos-0607-ct42#0189
+tebuconazol + trifloxistrobina,2008/09,63.6,1,godoy2009-cooperativos-0809-ct69#0085
+tebuconazol + trifloxistrobina,2009/10,70.7,1,godoy2010-cooperativos-0910-ct80#0020
+tebuconazol + trifloxistrobina,2010/11,59.9,1,godoy2011-cooperativos-1011-ct87#0020
+tebuconazol + trifloxistrobina,2018/19,52.2,1,godoy2019-cooperativos-1819-ct148#0017
+tebuconazol + trifloxistrobina,2020/21,53.8,1,godoy2021-cooperativos-2021-ct174#0012
+tebuconazol + trifloxistrobina,2021/22,58.2,1,godoy2022-cooperativos-2122-ct187#0012
+tetraconazol,2003/04,85.6,1,godoy2005-cooperativos-0304-doc251#0004
+tetraconazol,2004/05,85.3,2,godoy2005-cooperativos-0405-doc266#0051; godoy2005-cooperativos-0405-doc266#0055
+tetraconazol,2006/07,37.3,2,godoy2007-cooperativos-0607-ct42#0102; godoy2007-cooperativos-0607-ct42#0105
+tetraconazol,2008/09,40.9,2,godoy2009-cooperativos-0809-ct69#0055; godoy2009-cooperativos-0809-ct69#0061
